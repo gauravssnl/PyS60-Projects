@@ -8,7 +8,14 @@
 #Program code begins here
  
 # ipviewer v1.3 script by gauravssnl
-import appuifw,e32,os,sys,re,globalui
+import appuifw
+import e32
+import os
+import sys
+import re
+import globalui
+import math
+import data
 dir=appuifw.app.full_name()[0]
 path=dir+":\\System\\Apps\\IP Viewer\\"
 # print path
@@ -18,8 +25,8 @@ import socket
 try:
     import miso
     miso_import =1
-except:
-    pass    
+except: 
+    pass # an empty block
 lock=e32.Ao_lock()
 title="IP Viewer v1.3"
 ru= lambda txt:txt.decode("utf-8","ignore")
@@ -28,6 +35,7 @@ configfile=path+"config.ini"
 logfile="C:\\IPViewerlog.txt"
 ss="Simple Server_0xe247d320.exe"
 
+# create class Settings(object):
 class Settings(object):
     def __init__(self):
         self.APN= -1
@@ -54,7 +62,8 @@ class Settings(object):
                  os.mkdir(path)
                  open(configfile,"w").write(data)    
          del data
-                             
+
+# create class UI(object):         
 class UI(object):
     def __init__(self):
         self.lock=e32.Ao_lock()
@@ -89,7 +98,7 @@ class UI(object):
             e32.ao_sleep(2)
             os.abort()
         else:
-            pass    
+            pass # an empty block   
         self.write("Access Point: %s"%self.ap_list[self.apid_list.index(self.sets.APN)])
         self.write("Find IP:%s"%self.insta(self.sets.IPHUNT))
         self.write("Run Simple Server: %s"%self.yesno[self.sets.RUNSS])
@@ -304,13 +313,13 @@ class UI(object):
                 miso.compress_all_heaps()
                 #appuifw.note(u"Co")
             except:
-                pass
+                pass # an empty block
         else:
-            pass                
+            pass # an empty block
                             
             
         
         
-e32.ao_yield()
-ui=UI()
-ui.app()
+e32.ao_yield() # Close
+ui=UI() # Close
+ui.app() # Close
