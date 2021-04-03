@@ -1,11 +1,14 @@
 
 #Console.py script for PyS60
 
+import os
 import sys
 import e32
 import appuifw
 ru = lambda text, : text.decode('utf-8', 'ignore') 
-class Console :
+
+# create class Console()
+class Console():
 
 
     __module__ = __name__
