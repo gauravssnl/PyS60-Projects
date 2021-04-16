@@ -8,6 +8,8 @@ This module contains the primary objects that power Requests.
 """
 
 import os
+import sys
+import time
 import urllib
 
 from urlparse import urlparse, urlunparse, urljoin, urlsplit
