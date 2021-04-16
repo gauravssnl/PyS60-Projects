@@ -8,7 +8,13 @@
 #Program code begins here
  
 # ipviewer v1.3 script by gauravssnl
-import appuifw,e32,os,sys,re,globalui
+import appuifw
+import e32
+import os
+import sys
+import re
+import globalui
+
 dir=appuifw.app.full_name()[0]
 path=dir+":\\System\\Apps\\IP Viewer\\"
 # print path
