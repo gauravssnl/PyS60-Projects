@@ -4,8 +4,13 @@
 by爱不只是说说
 2011/07/01
 '''
+
+import os
+import sys 
+
 cn = lambda x:x.decode('u8')
 
+# create class manager:
 class manager:
     __name__ == 'powlite_fm'
     def __init__(s, filepath=None):
