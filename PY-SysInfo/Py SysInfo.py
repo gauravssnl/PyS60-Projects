@@ -1,5 +1,7 @@
 # Py SysInfo.py script by gauravssnl
 
+import os
+import sys 
 import sysinfo
 import appuifw 
 import e32
