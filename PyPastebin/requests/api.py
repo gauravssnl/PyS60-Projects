@@ -11,6 +11,9 @@ This module implements the Requests API.
 
 """
 
+import os
+import sys
+import os.path
 from . import sessions
 
 def request(method, url, **kwargs):
