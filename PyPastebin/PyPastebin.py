@@ -4,6 +4,7 @@ import appuifw
 import e32
 import os
 import sys
+import os.path
 import pastebin_python as P
 import powlite_fm
 import globalui
