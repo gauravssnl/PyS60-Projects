@@ -7,6 +7,7 @@ by爱不只是说说
 
 import os
 import sys 
+import os.path
 
 cn = lambda x:x.decode('u8')
 
