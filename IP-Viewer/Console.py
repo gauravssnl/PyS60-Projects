@@ -7,7 +7,6 @@ import e32
 import appuifw
 ru = lambda text, : text.decode('utf-8', 'ignore') 
 
-# create class Console()
 class Console():
 
 
