@@ -8,8 +8,7 @@
 #Program code begins here
  
 # ipviewer v1.3 script by gauravssnl
-import appuifw
-import e32
+import appuifw, e32
 import os
 import sys
 import re
