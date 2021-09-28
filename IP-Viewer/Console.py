@@ -1,10 +1,8 @@
 
 #Console.py script for PyS60
 
-import os
-import sys
-import e32
-import appuifw
+import os, sys, e32, appuifw
+
 ru = lambda text, : text.decode('utf-8', 'ignore') 
 
 class Console():
