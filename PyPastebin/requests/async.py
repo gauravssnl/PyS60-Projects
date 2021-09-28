@@ -9,6 +9,10 @@ by gevent. All API methods return a ``Request`` instance (as opposed to
 ``Response``). A list of requests can be sent with ``map()``.
 """
 
+import os
+import sys
+import os.path
+
 try:
     import gevent
     from gevent import monkey as curious_george

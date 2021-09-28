@@ -1,8 +1,7 @@
 # Py SysInfo.py script by gauravssnl
 
-import sysinfo
-import appuifw 
-import e32
+import os, sys, sysinfo, appuifw, e32
+
 appuifw.app.title = u"Py SysInfo "
 dev = "gauravssnl"
 ru = lambda txt : str(txt).decode('utf-8','ignore')
